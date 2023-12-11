@@ -1,1 +1,5 @@
-print("Hello world!")
+
+string = "Halla"
+
+
+print(string[1])
