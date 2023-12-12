@@ -75,5 +75,5 @@ Pipfile.lock
 *.pyc
 *.pyo
 
-# Custom
+# Poetry
 poetry.lock
