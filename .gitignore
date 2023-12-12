@@ -74,3 +74,6 @@ Pipfile.lock
 # virtualenv
 *.pyc
 *.pyo
+
+# Custom
+poetry.lock

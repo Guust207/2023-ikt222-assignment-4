@@ -1,0 +1,8 @@
+{
+  "message": "Username not found"
+}
+
+{
+  "message": "Incorrect password. The SQL Could not find a user with that password"
+}
+
