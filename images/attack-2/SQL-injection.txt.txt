@@ -1,0 +1,7 @@
+1. SELECT * FROM users WHERE username='{username}' AND password='{password}'
+
+2. SELECT * FROM users WHERE username='jonas.dahl' AND password='<SQL INJECTION HERE>'
+
+' OR 'hey'='hey
+
+3. SELECT * FROM users WHERE username='jonas.dahl' AND password='' OR 'hey'='hey'
