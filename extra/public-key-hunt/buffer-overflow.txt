@@ -1,0 +1,6 @@
+Supervisor login:
+    Username: Whatever
+    Password: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx/login
+
+Dropbox link:
+    https://dropbox.internal.regjeringen.uiaikt.no/
