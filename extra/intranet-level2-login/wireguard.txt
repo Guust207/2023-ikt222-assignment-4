@@ -1,0 +1,13 @@
+## Done in WSL Ubuntu ##
+
+1. Install WireGuard and nmap
+
+2. Connect to peer/network with WireGuard using Jonas credentials in the config file
+    sudo wg-quick up wg0.conf
+    sudo wg show
+    ping 10.13.13.254
+    nmap -p 22 10.13.13.0/24
+
+3. Which services are open?
+    PORT    STATE   SERVICE
+    22/tcp  open    ssh

@@ -1,10 +1,16 @@
 First login:
-Username: jonas.dahl
-Password: KattenMinErKul123
+    Username: jonas.dahl
+    Password: KattenMinErKul123
 
-Intranett Level 1 login:
-Username: jonas.dahl
-Password: ' OR 'hey'='hey
+Intranet Level 1 login:
+    Username: jonas.dahl
+    Password: ' OR 'hey'='hey
 
 Wireguard Credentials for Security Level 2:
-Password: jeg!Har%Mest&LystTil&At%Være-En-Hacker
+    Password: jeg!Har%Mest&LystTil&At%Være-En-Hacker
+
+SSH server :
+    IP address: 10.13.13.253
+
+Internal Supervisor Messaging:
+    IP address: 10.13.13.254    (Port 80 HTTP, while connected to WireGuard VPN)
