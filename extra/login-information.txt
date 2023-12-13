@@ -14,3 +14,7 @@ SSH server :
 
 Internal Supervisor Messaging:
     IP address: 10.13.13.254    (Port 80 HTTP, while connected to WireGuard VPN)
+
+Supervisor login with Buffer Overflow:
+    Username: whatever
+    Password: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx/login
