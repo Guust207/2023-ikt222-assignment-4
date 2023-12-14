@@ -1,23 +1,40 @@
 First login:
+    URL: https://portal.regjeringen.uiaikt.no/dash
     Username: jonas.dahl
     Password: KattenMinErKul123
 
 Intranet Level 1 login:
+    URL: https://inner.portal.regjeringen.uiaikt.no/login?next=%2F
     Username: jonas.dahl
     Password: ' OR 'hey'='hey
 
 Wireguard Credentials for Security Level 2:
+    URL: https://inner.portal.regjeringen.uiaikt.no/
     Password: jeg!Har%Mest&LystTil&At%Være-En-Hacker
 
-SSH server :
-    IP address: 10.13.13.253
+SSH server:
+    IP: 10.13.13.253                        (Port 22 SSH, while connected to WireGuard VPN)
 
 Internal Supervisor Messaging:
-    IP address: 10.13.13.254    (Port 80 HTTP, while connected to WireGuard VPN)
+    IP: 10.13.13.254                        (Port 80 HTTP, while connected to WireGuard VPN)
 
 Supervisor login with Buffer Overflow:
+    IP: 10.13.13.254                        (While connected to WireGuard VPN)
     Username: whatever
     Password: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx/login
 
+Dropbox file upload:
+    URL: https://dropbox.internal.regjeringen.uiaikt.no/
+
 SSH access after key upload:
-    Command: ssh ingridnilsen@10.13.13.253
+    Command: ssh ingridnilsen@10.13.13.253  (While connected to WireGuard VPN)
+
+State Secrets login:
+    URL: https://state-secrets.internal.regjeringen.uiaikt.no/
+    Username: ingridnilsen
+    Password: 3xtr3m3ly_s3cur3
+
+State Secrets Database login:
+    File: reverse-engineering-bin           (Linux executable)
+    Username: statsminister
+    Password: erna

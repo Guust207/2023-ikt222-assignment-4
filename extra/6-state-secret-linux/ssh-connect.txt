@@ -1,0 +1,10 @@
+In WSL:
+    ssh ingridnilsen@10.13.13.253
+
+In custom OS:
+    ls
+    cd home
+    ls
+    cd ingrid.nilsen
+    ls
+    cat level3_secrets.txt
